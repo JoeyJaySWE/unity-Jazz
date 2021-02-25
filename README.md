@@ -7,3 +7,4 @@ A project together with the IP print class where we make a event page for unity 
 
 <a href="https://trello.com/b/PyT0aQUE/jazz" target="_blank">Road Map (Trelllo)</a>
 
+<a href="https://joeyjayswe.github.io/unity-Jazz/" target=_blank>Live version (GitHub Pages)</a>
