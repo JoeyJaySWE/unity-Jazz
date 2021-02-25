@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+  --peach:  #f7ede2;
+  --cloud: #d2dde3;
+  --blues-blue: #373a6a;
+  --tomato: #dd3f18;
+}
+html{
+    font-size:16px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Bebas Neue';
+    color: var(--blues-blue);
+}
+
+h1{
+    font-size: 3.5rem;
+    
+}
+h2{
+    font-size: 3rem
+
+}
+.subtitle{
+    font-size: 2rem;
+}
+body{
+    background-color: var(--peach);
+    color: var(--tomato);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Bebas Nueue';
+}
+.premierCounter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.premierCounter time{
+    min-width: 180px;
+    text-align: center;
+    font-size: 2.5rem;
+}
