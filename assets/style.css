@@ -59,3 +59,21 @@ body{
     /* justify-content: center; */
     align-items: center;
 }
+
+button{
+    min-height:40px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 3px 4px 2px #00000075;
+    border: 3px transparent solid;
+    color: var(--blues-blue);
+    font-family: 'Bebas Neue';
+    font-size: 1.2rem;
+    transition: border 600ms ease;
+}
+button:hover{
+    border-color:var(--cloud);
+    cursor: pointer;
+}
