@@ -42,6 +42,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 1.0;
+    transition: opacity 600ms ease;
 }
 .premierCounter time{
     min-width: 180px;
@@ -58,6 +60,11 @@ body{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    opacity: 1.0;
+    transition: opacity 600ms ease;
+}
+.hidden{
+    opacity: 0.0;
 }
 
 button{
