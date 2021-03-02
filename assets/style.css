@@ -4,9 +4,34 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-Light.ttf ') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-LightItalic.ttf') format('ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-Thin.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-ThinItalic.ttf') format('ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+
 :root{
   --peach:  #f7ede2;
-  --cloud: #d2dde3;
+  --blue-skies: #d2dde3;
   --blues-blue: #373a6a;
   --tomato: #dd3f18;
 }
@@ -19,8 +44,22 @@ h1,h2,h3,h4,h5{
     color: var(--blues-blue);
 }
 
+.logo{
+    width:155px;
+    height:79px;
+    border-radius: 40px;
+    background-color: #fff;
+    margin: auto;
+    margin-top:16px;
+}
+
 h1{
-    font-size: 3.5rem;
+    margin-top:70px;
+    max-width: 275px;
+    line-height: 53px;
+    position: relative;
+    z-index:3;
+    font-size: 2.9rem;
     
 }
 h2{
@@ -30,12 +69,50 @@ h2{
 .subtitle{
     font-size: 2rem;
 }
+
+
+
+form{
+    margin-top:40px;
+    max-width:340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form h2{
+    margin-bottom:45px;
+    font-size:26px;
+    color:var(--tomato);
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: center;
+    max-width:330px;
+}
+form input{
+    background-color:transparent;
+    border:none;
+    min-width:270px;
+    padding-bottom: 10px;
+    border-bottom:2px solid #707070;
+    margin-bottom: 65px;
+    color:var(--blues-blue);
+    font-family: 'Bebas Neue';
+    font-size: 19px;
+}
+form input::placeholder{
+    margin-bottom:20px;
+    color:var(--blues-blue);
+    font-family: 'Bebas Neue';
+    font-size: 19px;
+}
+
 body{
     background-color: var(--peach);
     color: var(--tomato);
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Bebas Nueue';
+    padding:24px;
 }
 .premierCounter{
     display: flex;
@@ -62,6 +139,7 @@ body{
     align-items: center;
     opacity: 1.0;
     transition: opacity 600ms ease;
+    z-index:10;
 }
 .hidden{
     opacity: 0.0;
@@ -81,6 +159,158 @@ button{
     transition: border 600ms ease;
 }
 button:hover{
-    border-color:var(--cloud);
+    border-color:var(--blue-skies);
     cursor: pointer;
+}
+
+
+
+.joke{
+    position:absolute;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height:490px;
+    max-width: 340px;
+}
+
+.blueSkiesBlock{
+    width:100%;
+    top:-25px;
+    height:375px;
+    max-width:340px;
+    display: flex;
+    background-image: url('/assets/img/blue-block.svg');
+    background-repeat: no-repeat;
+    position:relative;
+    background-position-y: center;
+    z-index:2;
+}
+.blueSkiesBlock p{
+    margin-top:100px;
+    margin-right:10px;
+    margin-left:auto;
+    max-width:282px;
+    line-height: 25px;;
+    text-align: end;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: var(--blues-blue);
+}
+.tomatoBlock{
+    width:100%;
+    max-width:340px;
+    height:260px;
+    top: -145px;
+    display: flex;
+    background-image: url('/assets/img/tomato-block.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position:relative;
+    z-index:3;
+}
+.tomatoBlock p{
+    margin-top:60px;
+    color:var(--blues-blue);
+    font-family: 'Bebas Neue';
+    margin-left:20px;
+    line-height: 33px;;
+    font-size: 24px;
+    
+}
+.tomatoBlock span{
+    background-color: var(--blue-skies);
+    padding-top:-10px;
+}
+.cardContainer button{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    top: -215px;
+    height: 40px;
+    padding: 10px 12px;
+    font-size: 18px;
+    z-index: 4;
+
+}
+
+
+form h3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:var(--tomato);
+    font-size:24px;
+    line-height: 29px;
+    width: 255px;
+}
+
+form h3>span{
+    font-family: 'Robot';
+    font-weight:200;
+    text-align: end;
+    font-size:16px;
+    margin-left:60px;
+    
+}
+form .wineBtns{
+    margin-top:20px;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+form .wine{
+    border-radius: 6px;
+    width:100%;
+    height:110px;
+    max-width:160px;
+    font-size:26px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    padding:20px 55px;
+    text-align: center;
+    color:var(--tomato);
+    box-shadow: 2px 3px 4px 0px #00000075;
+}
+
+.wine:hover{
+    border-color:var(--tomato);
+}
+
+form button[type='submit']{
+    margin-top:45px;
+    font-size:24px;
+    padding: 10px 35px;
+    border-radius: 6px;
+    width:110px;
+    height:50px;
+    box-shadow: 2px 3px 4px 0px #00000075;
+}
+
+footer{
+    margin-top:85px;
+    width:100vw;
+    max-width:390px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.adress,.contact,.openingHours{
+    font-family: 'Roboto';
+    font-weight:100;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+footer a{
+    text-decoration: none;
+    color:var(--tomato);
 }
