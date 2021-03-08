@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "parcel index.html wip/index.html",
+    "dev": "parcel index.html wip/index.html link-generator.html",
     "build": "parcel build index.html wip/index.html"
   },
   "dependencies": {

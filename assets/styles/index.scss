@@ -124,6 +124,7 @@ button{
 
     @media screen and(min-width:600px){
         max-width: unset;
+        height:610px;
     }
     button{
         position: relative;
@@ -141,7 +142,7 @@ button{
             height:60px;
             font-size: 28px;
             padding:15px 10px;
-            top:-380px;
+            top:-390px;
         }
     }
 }
@@ -199,7 +200,7 @@ button{
     @media screen and(min-width:600px){
         max-width: unset;
         top: -276px;
-        height:430px;
+        height:500px;
         background-position-x: unset;
         
     }
@@ -216,10 +217,18 @@ button{
             line-height: 60px;
         }
     }
-    
     span{
+        position: relative;
+        z-index: 2;
+    }
+    span.shadow{
         background-color: $blue-skies;
         padding-top:-10px;
+        z-index: 1;
+        display: block;
+        height:43px;
+        color: $blue-skies;
+        top:-43px;
     }
 }
 
@@ -344,8 +353,12 @@ form{
             font-size:39px;
         }
 
-        &:hover{
+        &:first-child:hover{
             border-color:$tomato;
+            background-image: $red-wine;
+        }
+        &:hover{
+            background-image: $white-wine;
         }
     }
     
