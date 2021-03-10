@@ -34,6 +34,12 @@ h1{
         max-width: 420px;
         line-height: 83px;
     }
+
+    @media screen and(min-width:950px){
+        font-size:60px;
+        max-width:350px;
+        line-height:73px;
+    }
 }
 h2{
     font-size: 3rem
@@ -119,13 +125,33 @@ button{
     display: flex;
     flex-wrap: wrap;
     width:100%;
+    position: relative;
     height:490px;
     max-width: 340px;
+
+    img{
+        display: none;
+        width: 60%;
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        max-width:705px;
+
+        @media screen and(min-width:950px){
+            display: block;
+        }
+    }
+
 
     @media screen and(min-width:600px){
         max-width: unset;
         height:610px;
     }
+
+    @media screen and(min-width:950px){
+      
+    }
+
     button{
         position: relative;
         margin-left: auto;
@@ -156,6 +182,7 @@ button{
     background-image: url('/assets/img/blue-block.svg');
     background-repeat: no-repeat;
     position:relative;
+    right:0;
     background-position-y: center;
     z-index:2;
     
@@ -164,6 +191,13 @@ button{
         background-position-y: unset;
         height: 610px;
         top: -70px;
+    }
+
+    @media screen and(min-width:950px){
+        width:50%;
+        top: 374px;
+        position: absolute;
+        background-position-x: right;
     }
 
     p{
@@ -182,6 +216,11 @@ button{
             max-width: 517px;
             font-size:33px;
             line-height: 45px;
+        }
+
+        @media screen and(min-width:950px){
+            font-size:24px;
+            max-width: 300px;
         }
     }
 }
@@ -204,6 +243,12 @@ button{
         background-position-x: unset;
         
     }
+
+    @media screen and(min-width:950px){
+        position:absolute;
+        top:350px;
+        width:50%;
+    }
     p{
         margin-top:60px;
         color:$blues-blue;
@@ -215,6 +260,10 @@ button{
         @media screen and(min-width:600px){
             font-size:42px;
             line-height: 60px;
+        }
+        @media screen and(min-width:950px){
+            font-size:36px;
+            line-height: 20px;
         }
     }
     span{
@@ -229,6 +278,11 @@ button{
         height:43px;
         color: $blue-skies;
         top:-43px;
+
+        @media screen and(min-width:950px){
+            top:-20px;
+            height:37px;
+        }
     }
 }
 
@@ -327,12 +381,27 @@ form{
         display: flex;
         width:100%;
         justify-content: space-between;
+        position: relative;
 
         @media screen and(min-width:600px){
             margin:auto;
             max-width: 525px;
             margin-top:35px;
         }
+
+        
+    }
+    .winePlate{
+        width:100%;
+        height: 0px;
+        max-width:251px;
+        border-radius: 6px;
+        padding: 0;
+        top:176px;
+        position: absolute;
+        z-index:-2;
+        background-image: $white-wine;
+        transition: height 2000ms ease-out, top 2000ms ease-out;
     }
     .wine{
         border-radius: 6px;
@@ -342,11 +411,15 @@ form{
         font-size:26px;
         font-family: 'Roboto';
         font-weight: 100;
+        right: unset;
         padding:20px 55px;
         text-align: center;
+        z-index:2;
         color:$tomato;
         box-shadow: 2px 3px 4px 0px #00000075;
         
+            
+
         @media screen and(min-width:600px){
             max-width:255px;
             height:180px;
@@ -355,10 +428,29 @@ form{
 
         &:first-child:hover{
             border-color:$tomato;
-            background-image: $red-wine;
+            background-color: transparent;
+
+            +.wine+div.winePlate{
+               
+                padding:2px;
+                top:0px;
+                height:176px;
+                z-index:1;
+                background-image: $red-wine;
+
+            }
         }
         &:hover{
-            background-image: $white-wine;
+            border-color:$tomato;
+            background-color: transparent;
+
+            &+.winePlate{
+                padding:2px;
+                top:0px;
+                right:0px;
+                height:176px;
+                background-image: $white-wine;
+            }
         }
     }
     
