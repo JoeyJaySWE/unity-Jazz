@@ -35,3 +35,12 @@ secreteBtn.addEventListener("click", function(){
         secret.style.display = "none";
     }, 700);
 })
+
+
+const toForm = document.querySelector("#toFormBtn");
+
+toForm.addEventListener("click", function(){
+  console.log("Click");
+    const contactForm = document.querySelector("form");
+    contactForm.scrollIntoView();
+})
