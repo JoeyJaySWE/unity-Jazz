@@ -1,0 +1,169 @@
+@import 'variables';
+
+.animationIntro{
+    position:absolute;
+    background-color:$peach;
+    height: 100vh;
+    width: 100vw;
+    z-index:10;
+    overflow: hidden;
+    transform: scale(1);
+    animation: shrinkLogo 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+
+    .winePour{
+        position: absolute;
+        margin-top: -40px;
+        margin-top: - 200px;
+        left: calc(50% - 65px);
+        transform: scaleY(.1);
+        animation: pourGlass 7000ms ease-in-out;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .glass2{
+        position:absolute;
+        margin-top: 150px;
+        left: calc(50% - 69px);
+        transform: scale(2.5);
+        
+
+        
+        path{
+            fill:$tomato;
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            animation: fillGlass 4000ms ease-out;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+        
+    }
+    
+    .hand{
+        position: absolute;
+        margin-top:300px;
+        left:110%;
+        transform: scale(2.5);
+        animation: grabGlass ease-out;
+        animation-delay: 4000ms;
+        animation-fill-mode: forwards;
+    }
+
+    .arm{
+        position: absolute;
+        margin-left: 110%;
+        margin-top:197px;
+        transform: scale(2.5);
+        animation: moveArm ease-out;
+        animation-delay: 4000ms;
+        animation-fill-mode: forwards;
+    }
+
+    .axel{
+        position: absolute;
+        margin-left: 65%;
+        margin-left:110%;
+        transform: scale(2.5);
+        margin-top: 100px;
+        animation: moveArm ease-out;
+        animation-delay: 4000ms;
+        animation-fill-mode: forwards;
+
+    }
+
+}
+
+.animationIntro .glass{
+        position:absolute;
+        margin-top: 150px;
+        left: calc(50% - 69px);
+        transform: scale(2.5);
+    path{
+        fill:transparent;
+        stroke: $tomato;
+        clip-path: unset;
+    }
+} 
+
+@keyframes fillGlass{
+
+    from{
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    to{
+        clip-path:  polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes pourGlass{
+    
+    0%{
+        margin-top: - 200px;
+        transform: scaleY(.1);
+    }
+
+    25%{
+        margin-top:-40px;
+        transform: scaleY(1.55);
+    }
+    
+    74%{
+        margin-top:-40px;
+        transform: scaleY(1.55);
+    }
+
+    75%{
+        margin-top:-41px;
+        transform: scaleY(1.54);
+    }
+
+    99%{
+        margin-top: -200px;
+        transform: scaleY(.1);
+    }
+    100%{
+        display: none;
+    }
+
+}
+
+@keyframes grabGlass{
+
+    0%{
+        left:110%;
+    }
+    100%{
+        left: calc(50% - 69px);
+    }
+}
+
+@keyframes moveArm{
+    0%{
+        margin-left:110%;
+    }
+    100%{
+        margin-left:calc(50% + 85px);
+
+    }
+}
+
+@keyframes shrinkLogo{
+    0%{
+        transform: scale(1);
+        background-color:$peach;
+        top:0
+    }
+    5%{
+
+        background-color: transparent;
+    }
+
+    100%{
+        transform: scale(0.30);
+        background-color: transparent;
+        top:-34%;
+    }
+}
