@@ -6,6 +6,12 @@ html{
     scroll-behavior: smooth;
 }
 
+// fix for br with flex.
+br{
+    flex-basis: 100%;
+    height:0;
+}
+
 h1,h2,h3,h4,h5{
     font-family: 'Bebas Neue';
     color: $blues-blue;
@@ -255,10 +261,10 @@ button{
         margin-top:100px;
         margin-right:10px;
         margin-left:auto;
-        max-width:282px;
+        max-width:307px;
         line-height: 25px;;
         text-align: end;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Roboto';
         font-weight: 400;
         color: $blues-blue;
@@ -383,7 +389,7 @@ form{
 
     @media screen and(min-width:950px){
         margin-top: 30px;
-        max-height: 780px;
+        max-height: 800px;
         margin-left:unset;
         max-width: unset;
     }
@@ -442,6 +448,10 @@ form{
             @media screen and(min-width:600px){
                 font-size:35px;
             }
+        }
+
+        &:focus, &:focus-visible{
+            outline:transparent;
         }
 
     }
@@ -510,7 +520,7 @@ form{
         
     }
     .winePlate{
-        width:100%;
+        width:calc(50% - 4px);
         height: 0px;
         max-width:156px;
         border-radius: 6px;
@@ -529,13 +539,12 @@ form{
         }
 
         @media screen and(min-width:950px){
-            width:50%;
             transform: scale(0.9);
         }
     }
     .wine{
         border-radius: 6px;
-        width:100%;
+        width:50%;
         height:110px;
         max-width:160px;
         font-size:26px;
@@ -570,6 +579,7 @@ form{
                 padding:2px;
                 top:0px;
                 height:106px;
+                width:calc(50% - 4px);
                 z-index:1;
                 background-image: $red-wine;
 
@@ -589,7 +599,6 @@ form{
                 padding:2px;
                 top:0px;
                 right:0px;
-                width:53%;
                 max-width:156px;
                 height:106px;
                 background-image: $white-wine;
@@ -599,13 +608,14 @@ form{
                     height:176px;
                 }
 
-                @media screen and(min-width:950px){
-                    right:-21px;
-                }
+                
             }
         }
     }
-    
+    button:focus, button:focus-visible{
+        outline: transparent;
+        border:3px solid $tomato;
+    }
     button[type='submit']{
         margin-top:45px;
         font-size:24px;
