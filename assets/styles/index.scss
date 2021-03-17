@@ -377,6 +377,7 @@ button{
 form{
     margin-top:180px;
     max-width:340px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -664,7 +665,60 @@ footer{
 
 }
 
+.formSend{
+    margin-top:180px;
+    width:100%;
+    max-width:340px;
+    display: flex;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 
+    @media screen and(min-width:600px) {
+        max-width: 590px;
+        margin: auto;
+        margin-top: 615px;
+    }
+
+    @media screen and(min-width:950px){
+        margin-top: 30px;
+        max-height: 800px;
+        margin-left:unset;
+        max-width: unset;
+    }
+
+    .travel, .noTravel{
+        display: none;
+        line-height: 25px;
+        text-align: end;
+        font-size: 16px;
+        font-family: "Roboto";
+        font-weight: 400;
+
+        @media screen and(min-width:600px){
+            max-width: 517px;
+            font-size:33px;
+            line-height: 45px;
+        }
+
+        @media screen and(min-width:950px){
+            font-size:18px;
+            max-width: 400px;
+            line-height: 30px;
+        }
+
+        @media screen and(min-width:1200px){
+            font-size:32px;
+            max-width:613px;
+            line-height: 50px;
+        }
+
+        a{
+            color: $tomato;
+        }
+    }
+}
 .adress,.contact,.openingHours{
     font-family: 'Roboto';
     font-weight:100;

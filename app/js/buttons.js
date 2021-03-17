@@ -1,4 +1,21 @@
+import params from "./query-search";
+
 document.addEventListener("DOMContentLoaded", function(){
+
+/* -----------------[element Variables]------------------- */
+  
+  const toForm = document.querySelector("#toFormBtn");
+  const contactForm = document.querySelector("form");
+  const wineBtns = document.querySelectorAll(".wineBtns button");
+  const redWine = wineBtns[0];
+  const whiteWine = wineBtns[1];
+  const submitBtn = document.querySelector("button.submit");
+  const formSend = document.querySelector(".formSend");
+  const travel = document.querySelector(".travel");
+  const noTravel = document.querySelector(".noTravel");
+  
+
+/* ------------------------------------------ */
 
 function getCookie(cname) {
     var name = cname + "=";
@@ -24,24 +41,19 @@ if(cookie === "true"){
     document.querySelector(".secret").style.display = "none";
 }
 
-const secreteBtn = document.querySelector(".secret button");
 
 
 
 
-const toForm = document.querySelector("#toFormBtn");
 
 toForm.addEventListener("click", function(){
   console.log("Click");
-    const contactForm = document.querySelector("form");
     contactForm.scrollIntoView();
 })
 
 
 
-const wineBtns = document.querySelectorAll(".wineBtns button");
-const redWine = wineBtns[0];
-const whiteWine = wineBtns[1];
+
 
 wineBtns.forEach(wineBtn => {
   wineBtn.addEventListener("click", function(){
@@ -54,9 +66,30 @@ wineBtns.forEach(wineBtn => {
         redWine.style.backgroundImage = "unset";
     }
     return false;
-    console.log("Dont print");
-  })
+  })// closes clickEvenListener
 
-});
+});// closes wineBtns.forEach.
 
-});
+
+submitBtn.addEventListener("click", function(){
+  console.log("Send!");
+  contactForm.style.animation = "fadeForm 2s ease-out";
+  contactForm.style.animationFillMode = "forwards";
+  setTimeout(() => {
+    contactForm.style.display = "none";
+
+    if(params.get("area") == "göteborg"){
+      noTravel.style.display = "block";
+    }
+    else{
+      travel.style.display = "block";
+    }
+
+
+    formSend.style.display = "flex";
+
+  }, 1900);
+})
+
+
+}); // closes document ready function.

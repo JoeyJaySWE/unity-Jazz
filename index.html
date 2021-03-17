@@ -86,8 +86,26 @@
       </section>
       
 
-      <button type="submit" name="submit">SEND</button>
+      <button type="button" class="submit" name="submit">SEND</button>
   </form>
+  
+
+  <section class="formSend">
+    <h2>Ticket is on it's way, <span data-guest></span>!</h2>
+
+    <p class="travel">
+      In case you need to make a travel plan <span data-guest></span>
+      please check your travel plan with the local transit
+      company on the link below.
+      <br>
+      <a href="https://www.vasttrafik.se/en/">Västtrafik.se (EN version)</a>
+    </p>
+
+    <p class="noTravel">
+      Allways happy to see more locals <span data-guest></span>, nothing beats walkingt hrough the town during summer time,
+      after a glasses with friends and smooth Jazz.
+    </p>
+  </section>
 
   <footer>
       <section class="adress">
@@ -119,9 +137,5 @@
   <script src="app/js/marker.js"></script>
   <script src="app/js/counter.js"></script>
   <script src="app/js/query-search.js"></script>
-  <script>
-    console.log("Length of window:"+window.innerWidth);
-  </script>
-    
 </body>
 </html>

@@ -1,0 +1,219 @@
+{
+    "invted": [
+        
+        {
+            "fname":"Linn",
+            "ename":"Ahlbom",
+            "zip":"400 12",
+            "adress":"Box 19086",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Ellen",
+            "ename":"Adalberth",
+            "zip":"413 15",
+            "adress":"Eldargatan 4B",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Fanny",
+            "ename":"Alvermalm",
+            "zip":"412 62",
+            "adress":"Kullegatan 3A",
+            "area":"Göteborg"
+        },
+        {
+            "fname":"Sarah",
+            "ename":"Malm",
+            "zip":"414 55",
+            "adress":"Karl Johansgatan 49D",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Evelina",
+            "ename":"Bakos",
+            "zip":"416 80",
+            "adress":"Lådspikaregatan 2",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Josefin",
+            "ename":"Bech",
+            "zip":"421 66",
+            "adress":"Vadlagsgatan 3",
+            "area":"Västra Frölunda"
+        },
+        
+        {
+            "fname":"Frida",
+            "ename":"Borbély",
+            "zip":"41504",
+            "adress":"Fanjunkaregatan 7F",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Lisa",
+            "ename":"Schneiderman",
+            "zip":"43149",
+            "adress":"Eklanda Skog 34",
+            "area":"Mölndal"
+        },
+        
+        {
+            "fname":"Matilda",
+            "ename":"Carlsdotter",
+            "zip":"416 69",
+            "adress":"Gustavsplatsen 1B",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Teresa",
+            "ename":"Eriksson",
+            "zip":"50765",
+            "adress":"Hårsåsen Skogshöjden 1",
+            "area":"Borås"
+        },
+        
+        {
+            "fname":"Adam",
+            "ename":"Augustsson",
+            "zip":"50471",
+            "adress":"Balladgatan 12",
+            "area":"Borås"
+        },
+        
+        {
+            "fname":"Philip",
+            "ename":"Holmsten",
+            "zip":"415 31",
+            "adress":"Solvarvsgatan 30",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Lisa",
+            "ename":"Löfström",
+            "zip":"414 59",
+            "adress":"Karl Johansgatan 15A",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Johanna",
+            "ename":"Hellquist",
+            "zip":"428 32",
+            "adress":"Streteredsvägen 1B",
+            "area":"Kållered"
+        },
+        
+        {
+            "fname":"Alda",
+            "ename":"Cripljanin",
+            "zip":"416 53",
+            "adress":"Munkebäcksgatan 26 C",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Josefin",
+            "ename":"Eldh",
+            "zip":"417 39",
+            "adress":"Skiftesgatan 2C",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Ava",
+            "ename":"Nikpay",
+            "zip":"416 49",
+            "adress":"Norra Ågatan 5F",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Cornelia",
+            "ename":"Nordlund",
+            "zip":"416 60",
+            "adress":"Schéelegatan 4A",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Edvin",
+            "ename":"Oldin",
+            "zip":"42258",
+            "adress":"Sägengatan 66",
+            "area":"Hisings Backa"
+        },
+        
+        {
+            "fname":"Lisa",
+            "ename":"Persson",
+            "zip":"41718",
+            "adress":"Smörbollsgatan 1A",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Hanna",
+            "ename":"Pålsson",
+            "zip":"416 74",
+            "adress":"Zachrissonsgatan 7E",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Tova",
+            "ename":"Rane",
+            "zip":"437 93",
+            "adress":"Annebergsvägen 53",
+            "area":"Lindome"
+        },
+        
+        {
+            "fname":"Anton",
+            "ename":"Schmidt",
+            "zip":"425 42",
+            "adress":"Ponnybacken 1",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Julia",
+            "ename":"Sikström",
+            "zip":"41832",
+            "adress":"Väderlekstorget 2",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Annie",
+            "ename":"Simlund",
+            "zip":"414 74",
+            "adress":"Asperögatan 3B",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Dara",
+            "ename":"Torabpour",
+            "zip":"411 02",
+            "adress":"Folkungagatan 6B",
+            "area":"Göteborg"
+        },
+        
+        {
+            "fname":"Rebecca",
+            "ename":"Wahl",
+            "zip":"41 667",
+            "adress":"Sparvgatan 3D",
+            "area":"Göteborg"
+        }
+    ]
+}

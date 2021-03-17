@@ -167,3 +167,18 @@
         top:-34%;
     }
 }
+
+@keyframes fadeForm{
+    0%{
+        opacity: 1;
+        display: flex;
+    }
+    99%{
+        opacity: 0;
+        display: flex;
+    }
+    100%{
+        
+        display:none;
+    }
+}

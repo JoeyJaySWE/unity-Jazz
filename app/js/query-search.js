@@ -1,19 +1,29 @@
+
+
 const querystring = window.location.search;
 const params = new URLSearchParams(querystring);
 const countDown = document.querySelector("#countdown");
 const siteProper = document.querySelector("#siteProper");
-const person = document.querySelector("[data-guest]");
+const personFields = document.querySelectorAll("[data-guest]");
 
 console.log(params.get('fname'));
 if(params.get('fname') == "admin"){
     countDown.style.display = "none";
-    siteProper.style.display = "block";
+    siteProper.style.display = "flex";
+    siteProper.style.flexDirection = "column";
+    siteProper.style.alignItems = "center";
+
 }
 
 if(params.get('fname') != null){
-    person.textContent = params.get("fname");
+    personFields.forEach(person => {
+        person.textContent = params.get("fname");
+        
+    });
 }
 
 if(params.get('fname') == null){
     siteProper.style.display = "none";
 }
+
+export default params;
