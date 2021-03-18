@@ -28,7 +28,6 @@ from out side of Gothenburg postal area.
 
 ## Code Review by 
 
-## Code Review by 
 
 @pnpjss
 
@@ -36,4 +35,6 @@ from out side of Gothenburg postal area.
 * Good dir and file structure
 * checkCookie.js is not in use, consider deleting or adding unused code to gitignore
 * Consider adding an apple-touch-icon to increase SEO
-* Cant complete review as the site is down under a timer, will check back after next push
+* Consider using a font with higher contrast to increase accessibility
+
+Clean design, easy-to-read code and solid allover. Great work! 
