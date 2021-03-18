@@ -15,7 +15,9 @@ A project together with the IP print class where we make a event page for unity 
 2. open up the terminal and navigate to the cloned repostiry
 3. typ 'npm run dev' in the terminal and hit enter.
 4. open the browser and navigate to 'localhost:1234'
-5. if used before Mar 19, 2021 11:00:47, use 'localhost:1234/?id=0' instead (to get past the countdown to offical release)
+5. if used before Mar 19, 2021 11:00:47,
+    use 'localhost:1234/?id=0' instead
+    (to get past the countdown to offical release)
 
 
 ### Supported Query strings
