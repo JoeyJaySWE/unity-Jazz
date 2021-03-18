@@ -27,3 +27,13 @@ from out side of Gothenburg postal area.
 
 
 ## Code Review by 
+
+## Code Review by 
+
+@pnpjss
+
+* Fonts are of types ttf and woff, try to use woff2
+* Good dir and file structure
+* checkCookie.js is not in use, consider deleting or adding unused code to gitignore
+* Consider adding an apple-touch-icon to increase SEO
+* Cant complete review as the site is down under a timer, will check back after next push
