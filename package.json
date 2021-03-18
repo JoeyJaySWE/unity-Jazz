@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "parcel index.html wip/index.html link-generator.html",
-    "build": "parcel build index.html wip/index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "parcel": "^2.0.0-beta.1",

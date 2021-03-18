@@ -5,9 +5,23 @@ const params = new URLSearchParams(querystring);
 const countDown = document.querySelector("#countdown");
 const siteProper = document.querySelector("#siteProper");
 const personFields = document.querySelectorAll("[data-guest]");
+let person = params.get('id');
+let data = require('./queries.json');
+data = data.invited;
 
-console.log(params.get('fname'));
-if(params.get('fname') == "admin"){
+
+//form fix
+document.querySelector("form").action = window.location.href;
+let hidden = document.querySelector("input[name=id]");
+hidden.value = person;
+
+
+if(params.get('id') != null){
+    personFields.forEach(guest => {
+        guest.textContent = data[person].fname;
+        
+    });
+    console.log("Is admin");
     countDown.style.display = "none";
     siteProper.style.display = "flex";
     siteProper.style.flexDirection = "column";
@@ -15,15 +29,9 @@ if(params.get('fname') == "admin"){
 
 }
 
-if(params.get('fname') != null){
-    personFields.forEach(person => {
-        person.textContent = params.get("fname");
-        
-    });
-}
-
-if(params.get('fname') == null){
+if(params.get('id') == null){
     siteProper.style.display = "none";
 }
 
+export {data as data, person as person};
 export default params;

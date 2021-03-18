@@ -1,5 +1,5 @@
 .parcel-cache*
-.vscode*
+.vscode
 dist*
 node_modules*
 link-generator.html

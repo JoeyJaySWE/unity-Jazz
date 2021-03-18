@@ -1,5 +1,12 @@
 {
-    "invted": [
+    "invited": [
+        {
+            "fname":"Admin",
+            "ename":"I. Strator",
+            "zip":"404 00",
+            "adress":"Everywhere 2",
+            "area":"Göteborg"
+        },
         
         {
             "fname":"Linn",

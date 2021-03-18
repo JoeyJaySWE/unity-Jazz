@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/index.scss">
   <link rel="stylesheet" href="assets/styles/animation.scss">
+  <meta property="og:site_name" content="Unity Jazz">
+  <meta property="og:title" content="Unity Jazz" />
+  <meta property="og:description" content="Celebrate the end of the pandemic with us at unity jazz with wine and smooth music." />
+  <meta property="og:image" content="assets/img/logo.svg" />
+  <meta name="twitter:image" content="assets/img/logo.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image:alt" content="Unity Jazz">
+  <meta propety="og:url" content="https://www.unityjazz.se/" />
   <title>UNDER CONSTRUCTION</title>
 </head>
 <body>
@@ -60,15 +68,16 @@
       <button id="toFormBtn">GET ON THE LIST</button>
   </section>
 
-  <form>
+  <form action="" method="get">
       <h2 class="redThin">
           Sign up on the list and 
           secure your place
       </h2>
-
-      <input type="text" name="name" placeholder="NAME">
+      <input type="hidden" name="id">
+      <input type="text" name="name" placeholder="* NAME" required>
       <input type="number" name="phone" placeholder="PHONE">
-      <input type="email" name="mail" placeholder="EMAIL">
+      <input type="email" name="mail" placeholder="* EMAIL" required>
+      <input type="hidden" name="wine">
 
 
       <h3>YOUR FIRST GLASS WILL BE...?*<br>
@@ -86,7 +95,7 @@
       </section>
       
 
-      <button type="button" class="submit" name="submit">SEND</button>
+      <button type="submit" class="submit">SEND</button>
   </form>
   
 
