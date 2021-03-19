@@ -1,4 +1,4 @@
-import params from "./query-search";
+import {params} from "./query-search";
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
         
         setTimeout(() => {
                 document.querySelector(".animationIntro").style.position = "absolute";
-                if(params.get("phone") == null){
+                if(params.get("name") === undefined){
                         window.scrollTo(0,0);
                 }
                 }, 8000);

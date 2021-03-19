@@ -17,7 +17,7 @@ let hidden = document.querySelector("input[name=id]");
 hidden.value = person;
 
 
-if(params.get('id') != null){
+if(person != ""){
     personFields.forEach(guest => {
         guest.textContent = data[person].fname;
         
@@ -27,10 +27,15 @@ if(params.get('id') != null){
     siteProper.style.display = "flex";
 
 }
+if(params.get("name") != ""  && person === ""){
+    personFields.forEach(guest => {
+        guest.textContent = params.get("name");
+        
+    });
+}
 
 if(params.get('id') == null){
     siteProper.style.display = "none";
 }
 
-export {data as data, person as person};
-export default params;
+export {data as data, person as person, params as params};

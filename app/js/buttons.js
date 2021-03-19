@@ -1,5 +1,4 @@
-import {data, person} from "./query-search";
-import params from "./query-search";
+import {data, person, params} from "./query-search";
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -20,22 +19,6 @@ document.addEventListener("DOMContentLoaded", function(){
   
 
 /* ------------------------------------------ */
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
 
 
   
@@ -72,7 +55,8 @@ wineBtns.forEach(wineBtn => {
 });// closes wineBtns.forEach.
 
 
-if(params.get("phone") != null){
+
+if(params.get("name") != null){
 
   setTimeout(() => {
     formSend.scrollIntoView("alignToBottom");
@@ -82,10 +66,12 @@ if(params.get("phone") != null){
   contactForm.style.animationFillMode = "forwards";
 
     contactForm.style.display = "none";
+  if(params.get("id") != ""){
 
     if(data[person].area.toLowerCase() == "göteborg"){
       noTravel.style.display = "block";
     }
+  }
     else{
       travel.style.display = "block";
     }
