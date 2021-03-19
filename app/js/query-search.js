@@ -35,7 +35,7 @@ if(querystring != "" && person != "404"){
     siteProper.style.display = "flex";
 
 }
-if(params.get("name") != ""  && person === ""){
+if(params.get("name") != ""  && person === "404"){
     personFields.forEach(guest => {
         guest.textContent = params.get("name");
         
