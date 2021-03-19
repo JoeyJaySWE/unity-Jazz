@@ -5,6 +5,7 @@ const params = new URLSearchParams(querystring);
 const countDown = document.querySelector("#countdown");
 const siteProper = document.querySelector("#siteProper");
 const personFields = document.querySelectorAll("[data-guest]");
+const personArea = document.querySelector("[data-location]");
 let person = params.get('id');
 let data = require('./queries.json');
 data = data.invited;
@@ -21,6 +22,9 @@ if(params.get('id') != null){
         guest.textContent = data[person].fname;
         
     });
+    console.log(data[person]);
+    console.log(personArea);
+    personArea.textContent = data[person].area;
     console.log("Is admin");
     countDown.style.display = "none";
     siteProper.style.display = "flex";
