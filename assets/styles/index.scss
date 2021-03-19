@@ -6,6 +6,12 @@ html{
     scroll-behavior: smooth;
 }
 
+#siteProper{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
 // fix for br with flex.
 br{
     flex-basis: 100%;

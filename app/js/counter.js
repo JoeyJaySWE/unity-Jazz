@@ -5,6 +5,7 @@ let premier = new Date("Mar 19, 2021 08:50:47").getTime();
 let timer = setInterval(function(){
     const counterField = document.querySelector("time.countdown");
     const counterContainer = document.querySelector("section#countdown");
+    const siteProper = document.querySelector("#siteProper");
     let now = new Date().getTime();
     
         let remaningTime = premier - now;
@@ -21,6 +22,6 @@ let timer = setInterval(function(){
                 clearInterval(timer);
                 counterContainer
         counterContainer.style.display = "none";
-        
+        siteProper.style.display = "flex";
     }
 }, 1000);

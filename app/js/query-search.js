@@ -28,8 +28,6 @@ if(params.get('id') != null){
     console.log("Is admin");
     countDown.style.display = "none";
     siteProper.style.display = "flex";
-    siteProper.style.flexDirection = "column";
-    siteProper.style.alignItems = "center";
 
 }
 
