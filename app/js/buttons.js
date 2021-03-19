@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 toForm.addEventListener("click", function(){
-  console.log("click");
     contactForm.scrollIntoView();
     formSend.scrollIntoView();
 })
