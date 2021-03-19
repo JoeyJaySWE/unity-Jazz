@@ -1,5 +1,4 @@
 let premier = new Date("Mar 19, 2021 08:50:47").getTime();
-// console.log(counterContainer);
 
 
 let timer = setInterval(function(){

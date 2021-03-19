@@ -39,11 +39,7 @@ function getCookie(cname) {
 
 
   
-const cookie = getCookie("swear");
-if(cookie === "true"){
-    console.log("Cookie set");
-    document.querySelector(".secret").style.display = "none";
-}
+
 
 
 
@@ -51,7 +47,6 @@ if(cookie === "true"){
 
 
 toForm.addEventListener("click", function(){
-  console.log("Click");
     contactForm.scrollIntoView();
 })
 
@@ -95,7 +90,6 @@ if(params.get("phone") != null){
       travel.style.display = "block";
     }
 
-    console.log("show post form");
     formSend.style.display = "flex";
     formSend.style.animation = "fadeInMsg 2s ease-out";
     formSend.style.animationFillMode = "forwards";

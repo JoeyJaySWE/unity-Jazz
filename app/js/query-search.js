@@ -22,10 +22,7 @@ if(params.get('id') != null){
         guest.textContent = data[person].fname;
         
     });
-    console.log(data[person]);
-    console.log(personArea);
     personArea.textContent = data[person].area;
-    console.log("Is admin");
     countDown.style.display = "none";
     siteProper.style.display = "flex";
 
