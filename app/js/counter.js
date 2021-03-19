@@ -1,10 +1,10 @@
-let premier = new Date("Mar 19, 2021 09:50:47").getTime();
+let premier = new Date("Mar 19, 2021 08:50:47").getTime();
 // console.log(counterContainer);
 
 
 let timer = setInterval(function(){
     const counterField = document.querySelector("time.countdown");
-    const counterContainer = document.querySelector("section.premierCounter");
+    const counterContainer = document.querySelector("section#countdown");
     let now = new Date().getTime();
     
         let remaningTime = premier - now;
