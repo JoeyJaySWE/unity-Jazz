@@ -66,7 +66,7 @@ if(params.get("name") != null){
   contactForm.style.animationFillMode = "forwards";
 
     contactForm.style.display = "none";
-  if(params.get("id") != ""){
+  if(person != "404"){
 
     if(data[person].area.toLowerCase() == "göteborg"){
       noTravel.style.display = "block";

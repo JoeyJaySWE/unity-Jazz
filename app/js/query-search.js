@@ -14,11 +14,19 @@ data = data.invited;
 //form fix
 document.querySelector("form").action = window.location.href;
 let hidden = document.querySelector("input[name=id]");
-hidden.value = person;
+
+if(querystring ===""){
+    hidden.value = "404";
+}
+else{
+
+    hidden.value = person;
+}
 
 
-if(person != ""){
+if(querystring != "" && person != "404"){
     personFields.forEach(guest => {
+        console.log("person: "+person);
         guest.textContent = data[person].fname;
         
     });
@@ -34,8 +42,5 @@ if(params.get("name") != ""  && person === ""){
     });
 }
 
-if(params.get('id') == null){
-    siteProper.style.display = "none";
-}
 
 export {data as data, person as person, params as params};
